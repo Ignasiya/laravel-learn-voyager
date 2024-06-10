@@ -35,3 +35,7 @@ require __DIR__.'/auth.php';
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('menu-test', function () {
+   return view('menu-test');
+});
